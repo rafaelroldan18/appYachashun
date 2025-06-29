@@ -26,6 +26,8 @@ import { Messages } from './pages/Messages';
 import { MyQuestions } from './pages/MyQuestions';
 import { MyAnswers } from './pages/MyAnswers';
 import { AllQuestions } from './pages/AllQuestions';
+import { Privacy } from './pages/Privacy';
+import { Guidelines } from './pages/Guidelines';
 
 // Admin Pages
 import { AdminDashboard } from './pages/admin/AdminDashboard';
@@ -86,6 +88,8 @@ function App() {
                   <Route path="/category/:id" element={<CategoryDetail />} />
                   <Route path="/trending" element={<AllQuestions />} />
                   <Route path="/recent" element={<AllQuestions />} />
+                  <Route path="/privacy" element={<Privacy />} />
+                  <Route path="/guidelines" element={<Guidelines />} />
                   
                   {/* Protected Routes */}
                   <Route path="/ask" element={

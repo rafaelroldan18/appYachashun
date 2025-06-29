@@ -73,26 +73,54 @@ export function Footer() {
           >
             <h3 className="font-semibold mb-4 text-lg">Soporte</h3>
             <ul className="space-y-3">
-              {[
-                { to: '/help', label: 'Centro de Ayuda' },
-                { to: '/guidelines', label: 'Normas de Comunidad' },
-                { to: '/contact', label: 'Contacto' },
-                { to: '/privacy', label: 'Privacidad' }
-              ].map((link, index) => (
-                <motion.li 
-                  key={link.to}
-                  whileHover={{ x: 4 }}
-                  transition={{ duration: 0.2 }}
+              <motion.li 
+                whileHover={{ x: 4 }}
+                transition={{ duration: 0.2 }}
+              >
+                <a 
+                  href="mailto:rp12112001@gmail.com" 
+                  className="text-gray-300 hover:text-accent-400 transition-colors duration-200 flex items-center group"
                 >
-                  <Link 
-                    to={link.to} 
-                    className="text-gray-300 hover:text-accent-400 transition-colors duration-200 flex items-center group"
-                  >
-                    <span className="w-1 h-1 bg-accent-500 rounded-full mr-3 group-hover:w-2 transition-all duration-200"></span>
-                    {link.label}
-                  </Link>
-                </motion.li>
-              ))}
+                  <span className="w-1 h-1 bg-accent-500 rounded-full mr-3 group-hover:w-2 transition-all duration-200"></span>
+                  Centro de Ayuda
+                </a>
+              </motion.li>
+              <motion.li 
+                whileHover={{ x: 4 }}
+                transition={{ duration: 0.2 }}
+              >
+                <Link 
+                  to="/guidelines" 
+                  className="text-gray-300 hover:text-accent-400 transition-colors duration-200 flex items-center group"
+                >
+                  <span className="w-1 h-1 bg-accent-500 rounded-full mr-3 group-hover:w-2 transition-all duration-200"></span>
+                  Normas de Comunidad
+                </Link>
+              </motion.li>
+              <motion.li 
+                whileHover={{ x: 4 }}
+                transition={{ duration: 0.2 }}
+              >
+                <a 
+                  href="mailto:rp12112001@gmail.com" 
+                  className="text-gray-300 hover:text-accent-400 transition-colors duration-200 flex items-center group"
+                >
+                  <span className="w-1 h-1 bg-accent-500 rounded-full mr-3 group-hover:w-2 transition-all duration-200"></span>
+                  Contacto
+                </a>
+              </motion.li>
+              <motion.li 
+                whileHover={{ x: 4 }}
+                transition={{ duration: 0.2 }}
+              >
+                <Link 
+                  to="/privacy" 
+                  className="text-gray-300 hover:text-accent-400 transition-colors duration-200 flex items-center group"
+                >
+                  <span className="w-1 h-1 bg-accent-500 rounded-full mr-3 group-hover:w-2 transition-all duration-200"></span>
+                  Privacidad
+                </Link>
+              </motion.li>
             </ul>
           </motion.div>
         </div>
